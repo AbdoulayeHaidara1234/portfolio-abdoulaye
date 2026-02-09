@@ -3,91 +3,118 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio MIAGE - [Ton Nom]</title>
+    <title>Portfolio MIAGE | [Ton Nom]</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header>
-        <h1>Portfolio Parcours MIAGE</h1>
+<header>
+    <div class="container">
+        <h1>Portfolio Numérique MIAGE</h1>
+        <p class="subtitle">Livrable principal - Projet CRM & Productions Académiques</p>
         <nav>
             <ul>
-                <li><a href="#travaux">Rubrique 1 : Travaux</a></li>
-                <li><a href="#notes">Rubrique 2 : Notes</a></li>
-                <li><a href="#certifs">Rubrique 3 : Certifs/Projets</a></li>
-                <li><a href="#crm">Rubrique 4 : Projet CRM</a></li>
-                <li><a href="#soutenance">Rubrique 5 : Soutenance</a></li>
-                <li><a href="#veille">Rubrique 6 : Veille</a></li>
-                <li><a href="#cv">À Propos</a></li>
+                <li><a href="#rubrique1">Travaux</a></li>
+                <li><a href="#rubrique2">Cours</a></li>
+                <li><a href="#rubrique3">Certifs</a></li>
+                <li><a href="#rubrique4">Projet CRM</a></li>
+                <li><a href="#rubrique5">Soutenance</a></li>
+                <li><a href="#rubrique6">Veille</a></li>
+                <li><a href="#propos">À Propos</a></li>
             </ul>
         </nav>
-    </header>
+    </div>
+</header>
 
-    <main>
-        <section id="travaux">
-            <h2>Rubrique 1 : Travaux demandés</h2>
-            <p>Dossiers complets réalisés en classe, correctement nommés.</p>
+<main class="container">
+
+    <section id="rubrique1">
+        <h2>Rubrique 1 : Travaux en classe</h2>
+        <div class="card">
+            <h3>TP Gestion CRM - Odoo (edu-techshop)</h3>
+            <p>Réalisation d'un cycle complet de vente et gestion de stocks pour <strong>edu-techshop</strong>.</p>
             <ul>
-                <li><a href="travaux/exercice1.zip">Exercice 1 - Gestion de données</a></li>
-                <li><a href="travaux/tp_reseau.pdf">Compte rendu TP Réseau</a></li>
+                <li>Configuration de la société au 10 Rue des Étudiants, Paris[cite: 32, 33, 34].</li>
+                <li>Gestion du catalogue : Ordinateur Dell XPS 13 et Souris Logitech[cite: 60, 61].</li>
+                <li>Flux commercial : Devis #SO0001 et Facture INV/2026/00001 payée[cite: 94, 106, 125].</li>
             </ul>
-        </section>
+            <a href="Odoo.pdf" class="btn" target="_blank">Voir le rapport PDF complet</a>
+        </div>
+    </section>
 
-        <section id="notes">
-            <h2>Rubrique 2 : Supports de cours (complétés)</h2>
-            <p>Notes de cours structurées et ressources personnelles.</p>
-            <div class="resource-box">
-                <a href="assets/notes_miage.pdf">Télécharger mes notes de cours</a>
+    <section id="rubrique2">
+        <h2>Rubrique 2 : Supports de cours complétés</h2>
+        <p>Centralisation des notes et ressources personnelles.</p>
+        <div class="card">
+            <p>Mes notes de cours structurées sont disponibles ici pour garantir une autonomie dans la gestion des ressources.</p>
+            <a href="assets/notes-cours.pdf" class="btn secondary">Consulter les notes</a>
+        </div>
+    </section>
+
+    <section id="rubrique3">
+        <h2>Rubrique 3 : Certifications & Projets</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Certifications obtenus</h3>
+                <p>Valorisation des compétences par des attestations au format lisible.</p>
+                <img src="assets/certif-placeholder.png" alt="Certificat" class="img-fluid">
             </div>
-        </section>
-
-        <section id="certifs">
-            <h2>Rubrique 3 : Certifications & Projets</h2>
-            <div class="grid">
-                <article>
-                    <h3>Certification [Nom]</h3>
-                    <img src="assets/certif.png" alt="Certification">
-                </article>
-                <article>
-                    <h3>Projet Réalisé</h3>
-                    <p>Description courte du projet hors CRM.</p>
-                </article>
+            <div class="card">
+                <h3>Projets additionnels</h3>
+                <p>Réalisations techniques hors cursus obligatoire.</p>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section id="crm">
-            <h2>Rubrique 4 : Projet Final (CRM)</h2>
-            <p>C'est le livrable principal de l'unité.</p>
-            <a href="https://github.com/ton-lien-projet-crm" class="btn">Accéder au dépôt du projet CRM</a>
-        </section>
+    <section id="rubrique4" class="highlight">
+        <h2>Rubrique 4 : Le Projet Final (CRM)</h2>
+        <p>Conception et réalisation d'un projet numérique intégrant toutes les compétences MIAGE.</p>
+        <div class="card">
+            <h3>Livrable Principal</h3>
+            <p>Accès au code source et à la documentation technique du projet CRM.</p>
+            <a href="#" class="btn">Accéder au dépôt GitHub</a>
+        </div>
+    </section>
 
-        <section id="soutenance">
-            <h2>Rubrique 5 : Diaporama pour la soutenance</h2>
-            <p>Support visuel structuré pour la présentation orale.</p>
-            <iframe src="assets/presentation.pdf" width="100%" height="500px"></iframe>
-        </section>
+    <section id="rubrique5">
+        <h2>Rubrique 5 : Diaporama de soutenance</h2>
+        <div class="card">
+            <p>Support visuel structuré pour la présentation orale professionnelle.</p>
+            <iframe src="assets/soutenance.pdf" width="100%" height="400px"></iframe>
+        </div>
+    </section>
 
-        <section id="veille">
-            <h2>Rubrique 6 : Autres ressources</h2>
-            <p>Capacité de veille et enrichissement personnel.</p>
+    <section id="rubrique6">
+        <h2>Rubrique 6 : Veille & Ressources</h2>
+        <p>Développement de la capacité de veille et enrichissement personnel.</p>
+        <div class="card">
             <ul>
-                <li>Lien vers un article technologique pertinent</li>
-                <li>Outil de veille utilisé (Feedly, etc.)</li>
+                <li>Article : Évolution des ERP en 2026.</li>
+                <li>Outil : Suivi technologique via RSS.</li>
             </ul>
-        </section>
+        </div>
+    </section>
 
-        <section id="cv">
-            <h2>À propos de moi</h2>
-            <p>Futur expert MIAGE.</p>
-            <a href="assets/cv_ats.pdf">Télécharger mon CV (Format ATS)</a>
-            <br>
-            <a href="https://linkedin.com/in/ton-profil">Mon profil LinkedIn</a>
-        </section>
-    </main>
+    <section id="propos">
+        <h2>À propos de moi</h2>
+        <div class="card">
+            <p>Étudiant en MIAGE, passionné par la gestion des systèmes d'information.</p>
+            <p><strong>Contact :</strong> abdoulayehaidara06@gmail.com [cite: 99]</p>
+            <div class="links">
+                <a href="assets/cv-ats.pdf" class="btn">Télécharger mon CV (Format ATS)</a>
+                <a href="https://linkedin.com/in/tonprofil" class="btn secondary">Profil LinkedIn</a>
+            </div>
+        </div>
+    </section>
 
-    <footer>
-        <p>© 2026 - Portfolio MIAGE - Codé à la main</p>
-    </footer>
+</main>
+
+<footer>
+    <div class="container">
+        <p>&copy; 2026 - Portfolio MIAGE - Développé manuellement (HTML5/CSS3).</p>
+        <p>Utilisation de l'IA permise pour l'assistance au code[cite: 3].</p>
+    </div>
+</footer>
 
 </body>
 </html>
